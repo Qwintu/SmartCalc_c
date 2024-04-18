@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SmartCalc 1.0: Исходный файл /Users/bankblac/C7_SmartCalc_v1.0-1/src/calc_lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SmartCalc 1.0<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">SmartCalc for calculating mathematical expressions and plotting graphs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">/Users/bankblac/C7_SmartCalc_v1.0-1/src/calc_lib.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="calc__lib_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CALC_LIB_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CALC_LIB_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define PI 3.141592653589793</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structstack__dbl.html">   14</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">double</span> <a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a>[256];</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">int</span> stack_dbl_count;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structstack__char.html">   22</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">char</span> <a class="code hl_struct" href="structstack__char.html">stack_char</a>[256];</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">int</span> stack_char_count;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>} <a class="code hl_struct" href="structstack__char.html">stack_char</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#ab4f1f58714c84c8da73022caa25c791a">calc_input_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">double</span> x);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#a24cababe7e1bd863f0debe6e33d939a7">parse_number</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">int</span> *i);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="calc__lib_8h.html#a86b4de680625a7234994cbcccc3ffa75">push_stack_dbl</a>(<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *stack, <span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="calc__lib_8h.html#a25850bf30e298dd920fda5674a2e0f45">push_stack_char</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *stack, <span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#aeb9d0f583b913f5a225bc6dbdd36824f">pop_stack_dbl</a>(<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *stack);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">char</span> <a class="code hl_function" href="calc__lib_8h.html#a2024d6606c5b0a6b9e488da6172ab605">pop_stack_char</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *stack);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#a361e2e7a270ca034ef7ec07cf6654793">is_empty_stack_dbl</a>(<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *stack);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#aab2d0d21b12c87233058abe29d87a609">is_empty_stack_char</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *stack);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#af6169811d8f3bc5da35c8fc4a9c9ffbf">isNumber</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#a88bfcaffd7738d62a11df634eaa99383">top_stack_dbl</a>(<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *stack);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">char</span> <a class="code hl_function" href="calc__lib_8h.html#a0f08185f074d84eec9b1dacea53bc098">top_stack_char</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *stack);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#a047174e5e79ac079e447be1065efce17">take_priority</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#ae4af0aa749c57c829eb7bd6302b0c54c">calc_top_stack_binary</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *<a class="code hl_struct" href="structstack__char.html">stack_char</a>, <a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#a7c8e26dfde73023fc34305f647bf2dd1">calc_top_stack_unaru</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *<a class="code hl_struct" href="structstack__char.html">stack_char</a>, <a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#ae82e14262940f37f0fe58c9d7ee11261">parse_func</a>(<span class="keywordtype">char</span> c, <span class="keywordtype">char</span> next_c, <span class="keywordtype">int</span> *i);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#a5076fae0b75c8519dfe3edddb26d4a91">grad_to_rad</a>(<span class="keywordtype">double</span> a);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">double</span> <a class="code hl_function" href="calc__lib_8h.html#a5742b49627f50ec48a7e5272ed87b8bd">rad_to_grad</a>(<span class="keywordtype">double</span> a);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#a4aad4d4c62245cddf950defbcc228fbc">is_brackets_correct</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#ad4daa4a1e2bc55b3cc4665cde905ca98">check_errors_in_sterng</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">int</span> <a class="code hl_function" href="calc__lib_8h.html#a0bf516732200bc5c395fbf95a8bd07a9">is_dot</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="calc__lib_8h.html#a136bce76229ccd9c1c88613d2f7109d5">  150</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="calc__lib_8h.html#a136bce76229ccd9c1c88613d2f7109d5">print_stack_dbl</a>(<a class="code hl_struct" href="structstack__dbl.html">stack_dbl</a> *stack);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="calc__lib_8h.html#ab0aefd7b145a2524c53dc49ed7beb579">  156</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="calc__lib_8h.html#ab0aefd7b145a2524c53dc49ed7beb579">print_stack_char</a>(<a class="code hl_struct" href="structstack__char.html">stack_char</a> *stack);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif  </span><span class="comment">// SRC_CALC_LIB_H_</span></div>
+<div class="ttc" id="acalc__lib_8h_html_a047174e5e79ac079e447be1065efce17"><div class="ttname"><a href="calc__lib_8h.html#a047174e5e79ac079e447be1065efce17">take_priority</a></div><div class="ttdeci">int take_priority(char c)</div><div class="ttdef"><b>Definition</b> calc_lib.c:246</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a0bf516732200bc5c395fbf95a8bd07a9"><div class="ttname"><a href="calc__lib_8h.html#a0bf516732200bc5c395fbf95a8bd07a9">is_dot</a></div><div class="ttdeci">int is_dot(const char *string)</div><div class="ttdef"><b>Definition</b> calc_lib.c:290</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a0f08185f074d84eec9b1dacea53bc098"><div class="ttname"><a href="calc__lib_8h.html#a0f08185f074d84eec9b1dacea53bc098">top_stack_char</a></div><div class="ttdeci">char top_stack_char(stack_char *stack)</div><div class="ttdef"><b>Definition</b> calc_lib.c:354</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a136bce76229ccd9c1c88613d2f7109d5"><div class="ttname"><a href="calc__lib_8h.html#a136bce76229ccd9c1c88613d2f7109d5">print_stack_dbl</a></div><div class="ttdeci">void print_stack_dbl(stack_dbl *stack)</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a2024d6606c5b0a6b9e488da6172ab605"><div class="ttname"><a href="calc__lib_8h.html#a2024d6606c5b0a6b9e488da6172ab605">pop_stack_char</a></div><div class="ttdeci">char pop_stack_char(stack_char *stack)</div><div class="ttdef"><b>Definition</b> calc_lib.c:338</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a24cababe7e1bd863f0debe6e33d939a7"><div class="ttname"><a href="calc__lib_8h.html#a24cababe7e1bd863f0debe6e33d939a7">parse_number</a></div><div class="ttdeci">double parse_number(const char *string, int *i)</div><div class="ttdef"><b>Definition</b> calc_lib.c:257</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a25850bf30e298dd920fda5674a2e0f45"><div class="ttname"><a href="calc__lib_8h.html#a25850bf30e298dd920fda5674a2e0f45">push_stack_char</a></div><div class="ttdeci">void push_stack_char(stack_char *stack, double value)</div><div class="ttdef"><b>Definition</b> calc_lib.c:326</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a361e2e7a270ca034ef7ec07cf6654793"><div class="ttname"><a href="calc__lib_8h.html#a361e2e7a270ca034ef7ec07cf6654793">is_empty_stack_dbl</a></div><div class="ttdeci">int is_empty_stack_dbl(stack_dbl *stack)</div><div class="ttdef"><b>Definition</b> calc_lib.c:345</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a4aad4d4c62245cddf950defbcc228fbc"><div class="ttname"><a href="calc__lib_8h.html#a4aad4d4c62245cddf950defbcc228fbc">is_brackets_correct</a></div><div class="ttdeci">int is_brackets_correct(const char *str)</div><div class="ttdef"><b>Definition</b> calc_lib.c:277</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a5076fae0b75c8519dfe3edddb26d4a91"><div class="ttname"><a href="calc__lib_8h.html#a5076fae0b75c8519dfe3edddb26d4a91">grad_to_rad</a></div><div class="ttdeci">double grad_to_rad(double a)</div><div class="ttdef"><b>Definition</b> calc_lib.c:317</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a5742b49627f50ec48a7e5272ed87b8bd"><div class="ttname"><a href="calc__lib_8h.html#a5742b49627f50ec48a7e5272ed87b8bd">rad_to_grad</a></div><div class="ttdeci">double rad_to_grad(double a)</div><div class="ttdef"><b>Definition</b> calc_lib.c:319</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a7c8e26dfde73023fc34305f647bf2dd1"><div class="ttname"><a href="calc__lib_8h.html#a7c8e26dfde73023fc34305f647bf2dd1">calc_top_stack_unaru</a></div><div class="ttdeci">double calc_top_stack_unaru(stack_char *stack_char, stack_dbl *stack_dbl)</div><div class="ttdef"><b>Definition</b> calc_lib.c:116</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a86b4de680625a7234994cbcccc3ffa75"><div class="ttname"><a href="calc__lib_8h.html#a86b4de680625a7234994cbcccc3ffa75">push_stack_dbl</a></div><div class="ttdeci">void push_stack_dbl(stack_dbl *stack, double value)</div><div class="ttdef"><b>Definition</b> calc_lib.c:321</div></div>
+<div class="ttc" id="acalc__lib_8h_html_a88bfcaffd7738d62a11df634eaa99383"><div class="ttname"><a href="calc__lib_8h.html#a88bfcaffd7738d62a11df634eaa99383">top_stack_dbl</a></div><div class="ttdeci">double top_stack_dbl(stack_dbl *stack)</div><div class="ttdef"><b>Definition</b> calc_lib.c:351</div></div>
+<div class="ttc" id="acalc__lib_8h_html_aab2d0d21b12c87233058abe29d87a609"><div class="ttname"><a href="calc__lib_8h.html#aab2d0d21b12c87233058abe29d87a609">is_empty_stack_char</a></div><div class="ttdeci">int is_empty_stack_char(stack_char *stack)</div><div class="ttdef"><b>Definition</b> calc_lib.c:347</div></div>
+<div class="ttc" id="acalc__lib_8h_html_ab0aefd7b145a2524c53dc49ed7beb579"><div class="ttname"><a href="calc__lib_8h.html#ab0aefd7b145a2524c53dc49ed7beb579">print_stack_char</a></div><div class="ttdeci">void print_stack_char(stack_char *stack)</div></div>
+<div class="ttc" id="acalc__lib_8h_html_ab4f1f58714c84c8da73022caa25c791a"><div class="ttname"><a href="calc__lib_8h.html#ab4f1f58714c84c8da73022caa25c791a">calc_input_string</a></div><div class="ttdeci">double calc_input_string(const char *string, double x)</div><div class="ttdef"><b>Definition</b> calc_lib.c:6</div></div>
+<div class="ttc" id="acalc__lib_8h_html_ad4daa4a1e2bc55b3cc4665cde905ca98"><div class="ttname"><a href="calc__lib_8h.html#ad4daa4a1e2bc55b3cc4665cde905ca98">check_errors_in_sterng</a></div><div class="ttdeci">int check_errors_in_sterng(const char *string)</div><div class="ttdef"><b>Definition</b> calc_lib.c:304</div></div>
+<div class="ttc" id="acalc__lib_8h_html_ae4af0aa749c57c829eb7bd6302b0c54c"><div class="ttname"><a href="calc__lib_8h.html#ae4af0aa749c57c829eb7bd6302b0c54c">calc_top_stack_binary</a></div><div class="ttdeci">double calc_top_stack_binary(stack_char *stack_char, stack_dbl *stack_dbl)</div><div class="ttdef"><b>Definition</b> calc_lib.c:215</div></div>
+<div class="ttc" id="acalc__lib_8h_html_ae82e14262940f37f0fe58c9d7ee11261"><div class="ttname"><a href="calc__lib_8h.html#ae82e14262940f37f0fe58c9d7ee11261">parse_func</a></div><div class="ttdeci">int parse_func(char c, char next_c, int *i)</div><div class="ttdef"><b>Definition</b> calc_lib.c:164</div></div>
+<div class="ttc" id="acalc__lib_8h_html_aeb9d0f583b913f5a225bc6dbdd36824f"><div class="ttname"><a href="calc__lib_8h.html#aeb9d0f583b913f5a225bc6dbdd36824f">pop_stack_dbl</a></div><div class="ttdeci">double pop_stack_dbl(stack_dbl *stack)</div><div class="ttdef"><b>Definition</b> calc_lib.c:331</div></div>
+<div class="ttc" id="acalc__lib_8h_html_af6169811d8f3bc5da35c8fc4a9c9ffbf"><div class="ttname"><a href="calc__lib_8h.html#af6169811d8f3bc5da35c8fc4a9c9ffbf">isNumber</a></div><div class="ttdeci">int isNumber(char c)</div><div class="ttdef"><b>Definition</b> calc_lib.c:374</div></div>
+<div class="ttc" id="astructstack__char_html"><div class="ttname"><a href="structstack__char.html">stack_char</a></div><div class="ttdef"><b>Definition</b> calc_lib.h:22</div></div>
+<div class="ttc" id="astructstack__dbl_html"><div class="ttname"><a href="structstack__dbl.html">stack_dbl</a></div><div class="ttdef"><b>Definition</b> calc_lib.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

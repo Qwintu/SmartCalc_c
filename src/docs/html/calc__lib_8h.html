@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SmartCalc 1.0: Файл /Users/bankblac/C7_SmartCalc_v1.0-1/src/calc_lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SmartCalc 1.0<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">SmartCalc for calculating mathematical expressions and plotting graphs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл /Users/bankblac/C7_SmartCalc_v1.0-1/src/calc_lib.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="calc__lib_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstack__dbl.html">stack_dbl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstack__char.html">stack_char</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a598a3330b3c21701223ee0ca14316eca"><td class="memItemLeft" align="right" valign="top"><a id="a598a3330b3c21701223ee0ca14316eca" name="a598a3330b3c21701223ee0ca14316eca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PI</b>&#160;&#160;&#160;3.141592653589793</td></tr>
+<tr class="separator:a598a3330b3c21701223ee0ca14316eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ab4f1f58714c84c8da73022caa25c791a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#ab4f1f58714c84c8da73022caa25c791a">calc_input_string</a> (const char *string, double x)</td></tr>
+<tr class="separator:ab4f1f58714c84c8da73022caa25c791a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cababe7e1bd863f0debe6e33d939a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a24cababe7e1bd863f0debe6e33d939a7">parse_number</a> (const char *string, int *i)</td></tr>
+<tr class="separator:a24cababe7e1bd863f0debe6e33d939a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b4de680625a7234994cbcccc3ffa75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a86b4de680625a7234994cbcccc3ffa75">push_stack_dbl</a> (<a class="el" href="structstack__dbl.html">stack_dbl</a> *stack, double value)</td></tr>
+<tr class="separator:a86b4de680625a7234994cbcccc3ffa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25850bf30e298dd920fda5674a2e0f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a25850bf30e298dd920fda5674a2e0f45">push_stack_char</a> (<a class="el" href="structstack__char.html">stack_char</a> *stack, double value)</td></tr>
+<tr class="separator:a25850bf30e298dd920fda5674a2e0f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9d0f583b913f5a225bc6dbdd36824f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#aeb9d0f583b913f5a225bc6dbdd36824f">pop_stack_dbl</a> (<a class="el" href="structstack__dbl.html">stack_dbl</a> *stack)</td></tr>
+<tr class="separator:aeb9d0f583b913f5a225bc6dbdd36824f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2024d6606c5b0a6b9e488da6172ab605"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a2024d6606c5b0a6b9e488da6172ab605">pop_stack_char</a> (<a class="el" href="structstack__char.html">stack_char</a> *stack)</td></tr>
+<tr class="separator:a2024d6606c5b0a6b9e488da6172ab605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361e2e7a270ca034ef7ec07cf6654793"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a361e2e7a270ca034ef7ec07cf6654793">is_empty_stack_dbl</a> (<a class="el" href="structstack__dbl.html">stack_dbl</a> *stack)</td></tr>
+<tr class="separator:a361e2e7a270ca034ef7ec07cf6654793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2d0d21b12c87233058abe29d87a609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#aab2d0d21b12c87233058abe29d87a609">is_empty_stack_char</a> (<a class="el" href="structstack__char.html">stack_char</a> *stack)</td></tr>
+<tr class="separator:aab2d0d21b12c87233058abe29d87a609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6169811d8f3bc5da35c8fc4a9c9ffbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#af6169811d8f3bc5da35c8fc4a9c9ffbf">isNumber</a> (char c)</td></tr>
+<tr class="separator:af6169811d8f3bc5da35c8fc4a9c9ffbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bfcaffd7738d62a11df634eaa99383"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a88bfcaffd7738d62a11df634eaa99383">top_stack_dbl</a> (<a class="el" href="structstack__dbl.html">stack_dbl</a> *stack)</td></tr>
+<tr class="separator:a88bfcaffd7738d62a11df634eaa99383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f08185f074d84eec9b1dacea53bc098"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a0f08185f074d84eec9b1dacea53bc098">top_stack_char</a> (<a class="el" href="structstack__char.html">stack_char</a> *stack)</td></tr>
+<tr class="separator:a0f08185f074d84eec9b1dacea53bc098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047174e5e79ac079e447be1065efce17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a047174e5e79ac079e447be1065efce17">take_priority</a> (char c)</td></tr>
+<tr class="separator:a047174e5e79ac079e447be1065efce17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4af0aa749c57c829eb7bd6302b0c54c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#ae4af0aa749c57c829eb7bd6302b0c54c">calc_top_stack_binary</a> (<a class="el" href="structstack__char.html">stack_char</a> *<a class="el" href="structstack__char.html">stack_char</a>, <a class="el" href="structstack__dbl.html">stack_dbl</a> *<a class="el" href="structstack__dbl.html">stack_dbl</a>)</td></tr>
+<tr class="separator:ae4af0aa749c57c829eb7bd6302b0c54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8e26dfde73023fc34305f647bf2dd1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a7c8e26dfde73023fc34305f647bf2dd1">calc_top_stack_unaru</a> (<a class="el" href="structstack__char.html">stack_char</a> *<a class="el" href="structstack__char.html">stack_char</a>, <a class="el" href="structstack__dbl.html">stack_dbl</a> *<a class="el" href="structstack__dbl.html">stack_dbl</a>)</td></tr>
+<tr class="separator:a7c8e26dfde73023fc34305f647bf2dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82e14262940f37f0fe58c9d7ee11261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#ae82e14262940f37f0fe58c9d7ee11261">parse_func</a> (char c, char next_c, int *i)</td></tr>
+<tr class="separator:ae82e14262940f37f0fe58c9d7ee11261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5076fae0b75c8519dfe3edddb26d4a91"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a5076fae0b75c8519dfe3edddb26d4a91">grad_to_rad</a> (double a)</td></tr>
+<tr class="separator:a5076fae0b75c8519dfe3edddb26d4a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5742b49627f50ec48a7e5272ed87b8bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a5742b49627f50ec48a7e5272ed87b8bd">rad_to_grad</a> (double a)</td></tr>
+<tr class="separator:a5742b49627f50ec48a7e5272ed87b8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aad4d4c62245cddf950defbcc228fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a4aad4d4c62245cddf950defbcc228fbc">is_brackets_correct</a> (const char *str)</td></tr>
+<tr class="separator:a4aad4d4c62245cddf950defbcc228fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4daa4a1e2bc55b3cc4665cde905ca98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#ad4daa4a1e2bc55b3cc4665cde905ca98">check_errors_in_sterng</a> (const char *string)</td></tr>
+<tr class="separator:ad4daa4a1e2bc55b3cc4665cde905ca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf516732200bc5c395fbf95a8bd07a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a0bf516732200bc5c395fbf95a8bd07a9">is_dot</a> (const char *string)</td></tr>
+<tr class="separator:a0bf516732200bc5c395fbf95a8bd07a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136bce76229ccd9c1c88613d2f7109d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#a136bce76229ccd9c1c88613d2f7109d5">print_stack_dbl</a> (<a class="el" href="structstack__dbl.html">stack_dbl</a> *stack)</td></tr>
+<tr class="separator:a136bce76229ccd9c1c88613d2f7109d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0aefd7b145a2524c53dc49ed7beb579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc__lib_8h.html#ab0aefd7b145a2524c53dc49ed7beb579">print_stack_char</a> (<a class="el" href="structstack__char.html">stack_char</a> *stack)</td></tr>
+<tr class="separator:ab0aefd7b145a2524c53dc49ed7beb579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="ab4f1f58714c84c8da73022caa25c791a" name="ab4f1f58714c84c8da73022caa25c791a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f1f58714c84c8da73022caa25c791a">&#9670;&#160;</a></span>calc_input_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_input_string </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Оснавная ф-ция для рассчета поступившего в виде строки выражения. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>Строка с рассчетным выражением </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>переменная х для расчета выражений с 'x' </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение выражения в формате double </dd></dl>
+<p>&lt; символ строки, который обрабатаваем</p>
+<p>&lt; инициализация стэка с операндами</p>
+<p>&lt; инициализация стэка с операторами</p>
+<p>Основной цикл парсинга входной строки выражения</p>
+<p>&lt; проверяем унарный + и - передскобкой</p>
+<p>&lt; проверяем унарный + и - в начале строки</p>
+<p>&lt; убирает после расчета ( из стека</p>
+<p>&lt; если далее идет ф-ция, то рассчитываем ее</p>
+
+</div>
+</div>
+<a id="ae4af0aa749c57c829eb7bd6302b0c54c" name="ae4af0aa749c57c829eb7bd6302b0c54c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4af0aa749c57c829eb7bd6302b0c54c">&#9670;&#160;</a></span>calc_top_stack_binary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_top_stack_binary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack_char</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack_dbl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ф-ция рассчета бинарного оператора с вершины стека. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structstack__char.html">stack_char</a></td><td>указатель на стек с операторами </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structstack__dbl.html">stack_dbl</a></td><td>указатель на стек с операндами </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение выражения в формате double </dd></dl>
+
+</div>
+</div>
+<a id="a7c8e26dfde73023fc34305f647bf2dd1" name="a7c8e26dfde73023fc34305f647bf2dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8e26dfde73023fc34305f647bf2dd1">&#9670;&#160;</a></span>calc_top_stack_unaru()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calc_top_stack_unaru </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack_char</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack_dbl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ф-ция рассчета унарного оператора с вершины стека. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structstack__char.html">stack_char</a></td><td>указатель на стек с операторами </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structstack__dbl.html">stack_dbl</a></td><td>указатель на стек с операндами </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение выражения в формате double </dd></dl>
+
+</div>
+</div>
+<a id="ad4daa4a1e2bc55b3cc4665cde905ca98" name="ad4daa4a1e2bc55b3cc4665cde905ca98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4daa4a1e2bc55b3cc4665cde905ca98">&#9670;&#160;</a></span>check_errors_in_sterng()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_errors_in_sterng </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет выражение на некоторые ошибки при нажатии кнопки "=" или "plot". </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>указатель на строку с проверяемым выражением </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5076fae0b75c8519dfe3edddb26d4a91" name="a5076fae0b75c8519dfe3edddb26d4a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5076fae0b75c8519dfe3edddb26d4a91">&#9670;&#160;</a></span>grad_to_rad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double grad_to_rad </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Переводит число из градусов в радианы. </p>
+
+</div>
+</div>
+<a id="a4aad4d4c62245cddf950defbcc228fbc" name="a4aad4d4c62245cddf950defbcc228fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aad4d4c62245cddf950defbcc228fbc">&#9670;&#160;</a></span>is_brackets_correct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_brackets_correct </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет корректность расстановки скобок в выражении при нажатии кнопки "=" или "plot".</p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>указатель на строку с проверяемым выражением </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0bf516732200bc5c395fbf95a8bd07a9" name="a0bf516732200bc5c395fbf95a8bd07a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf516732200bc5c395fbf95a8bd07a9">&#9670;&#160;</a></span>is_dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_dot </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ф-ция ищет точку в строке. </p>
+
+</div>
+</div>
+<a id="aab2d0d21b12c87233058abe29d87a609" name="aab2d0d21b12c87233058abe29d87a609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2d0d21b12c87233058abe29d87a609">&#9670;&#160;</a></span>is_empty_stack_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_empty_stack_char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет пустой ли стэк с символами </p>
+
+</div>
+</div>
+<a id="a361e2e7a270ca034ef7ec07cf6654793" name="a361e2e7a270ca034ef7ec07cf6654793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361e2e7a270ca034ef7ec07cf6654793">&#9670;&#160;</a></span>is_empty_stack_dbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_empty_stack_dbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет пустой ли стэк с числами </p>
+
+</div>
+</div>
+<a id="af6169811d8f3bc5da35c8fc4a9c9ffbf" name="af6169811d8f3bc5da35c8fc4a9c9ffbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6169811d8f3bc5da35c8fc4a9c9ffbf">&#9670;&#160;</a></span>isNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isNumber </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет является ли символ цифрой </p>
+
+</div>
+</div>
+<a id="ae82e14262940f37f0fe58c9d7ee11261" name="ae82e14262940f37f0fe58c9d7ee11261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82e14262940f37f0fe58c9d7ee11261">&#9670;&#160;</a></span>parse_func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_func </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>next_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Находит в выражении названия функций и записывает в стек соответствующий ей символ.</p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>первый символ названия ф-ции</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">next_c</td><td>второй символ названия ф-ции</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>длинна названия ф-ции </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код саписываемого в стек символа </dd></dl>
+
+</div>
+</div>
+<a id="a24cababe7e1bd863f0debe6e33d939a7" name="a24cababe7e1bd863f0debe6e33d939a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cababe7e1bd863f0debe6e33d939a7">&#9670;&#160;</a></span>parse_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double parse_number </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Находит число в строке. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">string</td><td>строка в которой ищется число </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">i</td><td>кол-во цифр в найденном числе </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число в формате double </dd></dl>
+
+</div>
+</div>
+<a id="a2024d6606c5b0a6b9e488da6172ab605" name="a2024d6606c5b0a6b9e488da6172ab605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2024d6606c5b0a6b9e488da6172ab605">&#9670;&#160;</a></span>pop_stack_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char pop_stack_char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Считывает символ из стэка </p>
+
+</div>
+</div>
+<a id="aeb9d0f583b913f5a225bc6dbdd36824f" name="aeb9d0f583b913f5a225bc6dbdd36824f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9d0f583b913f5a225bc6dbdd36824f">&#9670;&#160;</a></span>pop_stack_dbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double pop_stack_dbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Считывает число из стэка </p>
+
+</div>
+</div>
+<a id="ab0aefd7b145a2524c53dc49ed7beb579" name="ab0aefd7b145a2524c53dc49ed7beb579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0aefd7b145a2524c53dc49ed7beb579">&#9670;&#160;</a></span>print_stack_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_stack_char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ф-ция печатает стек с операторами. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structstack__char.html">stack_char</a></td><td>указатель на стек с операторами </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a136bce76229ccd9c1c88613d2f7109d5" name="a136bce76229ccd9c1c88613d2f7109d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136bce76229ccd9c1c88613d2f7109d5">&#9670;&#160;</a></span>print_stack_dbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_stack_dbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ф-ция печатает стек с операндами. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structstack__dbl.html">stack_dbl</a></td><td>указатель на стек с операндами </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25850bf30e298dd920fda5674a2e0f45" name="a25850bf30e298dd920fda5674a2e0f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25850bf30e298dd920fda5674a2e0f45">&#9670;&#160;</a></span>push_stack_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push_stack_char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Записывает символ в стэк символов </p>
+
+</div>
+</div>
+<a id="a86b4de680625a7234994cbcccc3ffa75" name="a86b4de680625a7234994cbcccc3ffa75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b4de680625a7234994cbcccc3ffa75">&#9670;&#160;</a></span>push_stack_dbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push_stack_dbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Записывает число в стэк чисел </p>
+
+</div>
+</div>
+<a id="a5742b49627f50ec48a7e5272ed87b8bd" name="a5742b49627f50ec48a7e5272ed87b8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5742b49627f50ec48a7e5272ed87b8bd">&#9670;&#160;</a></span>rad_to_grad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double rad_to_grad </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Переводит число из радиан в градусы. </p>
+
+</div>
+</div>
+<a id="a047174e5e79ac079e447be1065efce17" name="a047174e5e79ac079e447be1065efce17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047174e5e79ac079e447be1065efce17">&#9670;&#160;</a></span>take_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int take_priority </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет приоритет операций </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Символ оператора </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>int с приоритетом операции </dd></dl>
+
+</div>
+</div>
+<a id="a0f08185f074d84eec9b1dacea53bc098" name="a0f08185f074d84eec9b1dacea53bc098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f08185f074d84eec9b1dacea53bc098">&#9670;&#160;</a></span>top_stack_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char top_stack_char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__char.html">stack_char</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Читает верхнее значение из стэк с символами </p>
+
+</div>
+</div>
+<a id="a88bfcaffd7738d62a11df634eaa99383" name="a88bfcaffd7738d62a11df634eaa99383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bfcaffd7738d62a11df634eaa99383">&#9670;&#160;</a></span>top_stack_dbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double top_stack_dbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstack__dbl.html">stack_dbl</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Читает верхнее значение из стэк с числами </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

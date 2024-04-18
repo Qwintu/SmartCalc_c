@@ -1,0 +1,296 @@
+\doxysection{Файл /\+Users/bankblac/\+C7\+\_\+\+Smart\+Calc\+\_\+v1.0-\/1/src/calc\+\_\+lib.h}
+\hypertarget{calc__lib_8h}{}\label{calc__lib_8h}\index{/Users/bankblac/C7\_SmartCalc\_v1.0-\/1/src/calc\_lib.h@{/Users/bankblac/C7\_SmartCalc\_v1.0-\/1/src/calc\_lib.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}}
+\item 
+struct \mbox{\hyperlink{structstack__char}{stack\+\_\+char}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{calc__lib_8h_a598a3330b3c21701223ee0ca14316eca}\label{calc__lib_8h_a598a3330b3c21701223ee0ca14316eca} 
+\#define {\bfseries PI}~3.\+141592653589793
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{calc__lib_8h_ab4f1f58714c84c8da73022caa25c791a}{calc\+\_\+input\+\_\+string}} (const char \texorpdfstring{$\ast$}{*}string, double x)
+\item 
+double \mbox{\hyperlink{calc__lib_8h_a24cababe7e1bd863f0debe6e33d939a7}{parse\+\_\+number}} (const char \texorpdfstring{$\ast$}{*}string, int \texorpdfstring{$\ast$}{*}i)
+\item 
+void \mbox{\hyperlink{calc__lib_8h_a86b4de680625a7234994cbcccc3ffa75}{push\+\_\+stack\+\_\+dbl}} (\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}stack, double value)
+\item 
+void \mbox{\hyperlink{calc__lib_8h_a25850bf30e298dd920fda5674a2e0f45}{push\+\_\+stack\+\_\+char}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}stack, double value)
+\item 
+double \mbox{\hyperlink{calc__lib_8h_aeb9d0f583b913f5a225bc6dbdd36824f}{pop\+\_\+stack\+\_\+dbl}} (\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+char \mbox{\hyperlink{calc__lib_8h_a2024d6606c5b0a6b9e488da6172ab605}{pop\+\_\+stack\+\_\+char}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_a361e2e7a270ca034ef7ec07cf6654793}{is\+\_\+empty\+\_\+stack\+\_\+dbl}} (\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_aab2d0d21b12c87233058abe29d87a609}{is\+\_\+empty\+\_\+stack\+\_\+char}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_af6169811d8f3bc5da35c8fc4a9c9ffbf}{is\+Number}} (char c)
+\item 
+double \mbox{\hyperlink{calc__lib_8h_a88bfcaffd7738d62a11df634eaa99383}{top\+\_\+stack\+\_\+dbl}} (\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+char \mbox{\hyperlink{calc__lib_8h_a0f08185f074d84eec9b1dacea53bc098}{top\+\_\+stack\+\_\+char}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_a047174e5e79ac079e447be1065efce17}{take\+\_\+priority}} (char c)
+\item 
+double \mbox{\hyperlink{calc__lib_8h_ae4af0aa749c57c829eb7bd6302b0c54c}{calc\+\_\+top\+\_\+stack\+\_\+binary}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structstack__char}{stack\+\_\+char}}, \mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}})
+\item 
+double \mbox{\hyperlink{calc__lib_8h_a7c8e26dfde73023fc34305f647bf2dd1}{calc\+\_\+top\+\_\+stack\+\_\+unaru}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structstack__char}{stack\+\_\+char}}, \mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}})
+\item 
+int \mbox{\hyperlink{calc__lib_8h_ae82e14262940f37f0fe58c9d7ee11261}{parse\+\_\+func}} (char c, char next\+\_\+c, int \texorpdfstring{$\ast$}{*}i)
+\item 
+double \mbox{\hyperlink{calc__lib_8h_a5076fae0b75c8519dfe3edddb26d4a91}{grad\+\_\+to\+\_\+rad}} (double a)
+\item 
+double \mbox{\hyperlink{calc__lib_8h_a5742b49627f50ec48a7e5272ed87b8bd}{rad\+\_\+to\+\_\+grad}} (double a)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_a4aad4d4c62245cddf950defbcc228fbc}{is\+\_\+brackets\+\_\+correct}} (const char \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_ad4daa4a1e2bc55b3cc4665cde905ca98}{check\+\_\+errors\+\_\+in\+\_\+sterng}} (const char \texorpdfstring{$\ast$}{*}string)
+\item 
+int \mbox{\hyperlink{calc__lib_8h_a0bf516732200bc5c395fbf95a8bd07a9}{is\+\_\+dot}} (const char \texorpdfstring{$\ast$}{*}string)
+\item 
+void \mbox{\hyperlink{calc__lib_8h_a136bce76229ccd9c1c88613d2f7109d5}{print\+\_\+stack\+\_\+dbl}} (\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}stack)
+\item 
+void \mbox{\hyperlink{calc__lib_8h_ab0aefd7b145a2524c53dc49ed7beb579}{print\+\_\+stack\+\_\+char}} (\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}stack)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{calc__lib_8h_ab4f1f58714c84c8da73022caa25c791a}\label{calc__lib_8h_ab4f1f58714c84c8da73022caa25c791a} 
+\index{calc\_lib.h@{calc\_lib.h}!calc\_input\_string@{calc\_input\_string}}
+\index{calc\_input\_string@{calc\_input\_string}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{calc\_input\_string()}{calc\_input\_string()}}
+{\footnotesize\ttfamily double calc\+\_\+input\+\_\+string (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string,  }\item[{double}]{x }\end{DoxyParamCaption})}
+
+Оснавная ф-\/ция для рассчета поступившего в виде строки выражения. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em string} & Строка с рассчетным выражением \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & переменная х для расчета выражений с \textquotesingle{}x\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение выражения в формате double 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} символ строки, который обрабатаваем
+
+\texorpdfstring{$<$}{<} инициализация стэка с операндами
+
+\texorpdfstring{$<$}{<} инициализация стэка с операторами
+
+Основной цикл парсинга входной строки выражения
+
+\texorpdfstring{$<$}{<} проверяем унарный + и -\/ передскобкой
+
+\texorpdfstring{$<$}{<} проверяем унарный + и -\/ в начале строки
+
+\texorpdfstring{$<$}{<} убирает после расчета ( из стека
+
+\texorpdfstring{$<$}{<} если далее идет ф-\/ция, то рассчитываем ее\Hypertarget{calc__lib_8h_ae4af0aa749c57c829eb7bd6302b0c54c}\label{calc__lib_8h_ae4af0aa749c57c829eb7bd6302b0c54c} 
+\index{calc\_lib.h@{calc\_lib.h}!calc\_top\_stack\_binary@{calc\_top\_stack\_binary}}
+\index{calc\_top\_stack\_binary@{calc\_top\_stack\_binary}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{calc\_top\_stack\_binary()}{calc\_top\_stack\_binary()}}
+{\footnotesize\ttfamily double calc\+\_\+top\+\_\+stack\+\_\+binary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack\+\_\+char,  }\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack\+\_\+dbl }\end{DoxyParamCaption})}
+
+Ф-\/ция рассчета бинарного оператора с вершины стека. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \doxylink{structstack__char}{stack\+\_\+char}} & указатель на стек с операторами \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{structstack__dbl}{stack\+\_\+dbl}} & указатель на стек с операндами \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение выражения в формате double 
+\end{DoxyReturn}
+\Hypertarget{calc__lib_8h_a7c8e26dfde73023fc34305f647bf2dd1}\label{calc__lib_8h_a7c8e26dfde73023fc34305f647bf2dd1} 
+\index{calc\_lib.h@{calc\_lib.h}!calc\_top\_stack\_unaru@{calc\_top\_stack\_unaru}}
+\index{calc\_top\_stack\_unaru@{calc\_top\_stack\_unaru}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{calc\_top\_stack\_unaru()}{calc\_top\_stack\_unaru()}}
+{\footnotesize\ttfamily double calc\+\_\+top\+\_\+stack\+\_\+unaru (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack\+\_\+char,  }\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack\+\_\+dbl }\end{DoxyParamCaption})}
+
+Ф-\/ция рассчета унарного оператора с вершины стека. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \doxylink{structstack__char}{stack\+\_\+char}} & указатель на стек с операторами \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{structstack__dbl}{stack\+\_\+dbl}} & указатель на стек с операндами \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение выражения в формате double 
+\end{DoxyReturn}
+\Hypertarget{calc__lib_8h_ad4daa4a1e2bc55b3cc4665cde905ca98}\label{calc__lib_8h_ad4daa4a1e2bc55b3cc4665cde905ca98} 
+\index{calc\_lib.h@{calc\_lib.h}!check\_errors\_in\_sterng@{check\_errors\_in\_sterng}}
+\index{check\_errors\_in\_sterng@{check\_errors\_in\_sterng}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{check\_errors\_in\_sterng()}{check\_errors\_in\_sterng()}}
+{\footnotesize\ttfamily int check\+\_\+errors\+\_\+in\+\_\+sterng (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
+
+Проверяет выражение на некоторые ошибки при нажатии кнопки \"{}=\"{} или \"{}plot\"{}. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em string} & указатель на строку с проверяемым выражением \\
+\hline
+\end{DoxyParams}
+\Hypertarget{calc__lib_8h_a5076fae0b75c8519dfe3edddb26d4a91}\label{calc__lib_8h_a5076fae0b75c8519dfe3edddb26d4a91} 
+\index{calc\_lib.h@{calc\_lib.h}!grad\_to\_rad@{grad\_to\_rad}}
+\index{grad\_to\_rad@{grad\_to\_rad}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{grad\_to\_rad()}{grad\_to\_rad()}}
+{\footnotesize\ttfamily double grad\+\_\+to\+\_\+rad (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+Переводит число из градусов в радианы. \Hypertarget{calc__lib_8h_a4aad4d4c62245cddf950defbcc228fbc}\label{calc__lib_8h_a4aad4d4c62245cddf950defbcc228fbc} 
+\index{calc\_lib.h@{calc\_lib.h}!is\_brackets\_correct@{is\_brackets\_correct}}
+\index{is\_brackets\_correct@{is\_brackets\_correct}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{is\_brackets\_correct()}{is\_brackets\_correct()}}
+{\footnotesize\ttfamily int is\+\_\+brackets\+\_\+correct (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+Проверяет корректность расстановки скобок в выражении при нажатии кнопки \"{}=\"{} или \"{}plot\"{}.
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em str} & указатель на строку с проверяемым выражением \\
+\hline
+\end{DoxyParams}
+\Hypertarget{calc__lib_8h_a0bf516732200bc5c395fbf95a8bd07a9}\label{calc__lib_8h_a0bf516732200bc5c395fbf95a8bd07a9} 
+\index{calc\_lib.h@{calc\_lib.h}!is\_dot@{is\_dot}}
+\index{is\_dot@{is\_dot}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{is\_dot()}{is\_dot()}}
+{\footnotesize\ttfamily int is\+\_\+dot (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
+
+Ф-\/ция ищет точку в строке. \Hypertarget{calc__lib_8h_aab2d0d21b12c87233058abe29d87a609}\label{calc__lib_8h_aab2d0d21b12c87233058abe29d87a609} 
+\index{calc\_lib.h@{calc\_lib.h}!is\_empty\_stack\_char@{is\_empty\_stack\_char}}
+\index{is\_empty\_stack\_char@{is\_empty\_stack\_char}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{is\_empty\_stack\_char()}{is\_empty\_stack\_char()}}
+{\footnotesize\ttfamily int is\+\_\+empty\+\_\+stack\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Проверяет пустой ли стэк с символами \Hypertarget{calc__lib_8h_a361e2e7a270ca034ef7ec07cf6654793}\label{calc__lib_8h_a361e2e7a270ca034ef7ec07cf6654793} 
+\index{calc\_lib.h@{calc\_lib.h}!is\_empty\_stack\_dbl@{is\_empty\_stack\_dbl}}
+\index{is\_empty\_stack\_dbl@{is\_empty\_stack\_dbl}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{is\_empty\_stack\_dbl()}{is\_empty\_stack\_dbl()}}
+{\footnotesize\ttfamily int is\+\_\+empty\+\_\+stack\+\_\+dbl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Проверяет пустой ли стэк с числами \Hypertarget{calc__lib_8h_af6169811d8f3bc5da35c8fc4a9c9ffbf}\label{calc__lib_8h_af6169811d8f3bc5da35c8fc4a9c9ffbf} 
+\index{calc\_lib.h@{calc\_lib.h}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{isNumber()}{isNumber()}}
+{\footnotesize\ttfamily int is\+Number (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Проверяет является ли символ цифрой \Hypertarget{calc__lib_8h_ae82e14262940f37f0fe58c9d7ee11261}\label{calc__lib_8h_ae82e14262940f37f0fe58c9d7ee11261} 
+\index{calc\_lib.h@{calc\_lib.h}!parse\_func@{parse\_func}}
+\index{parse\_func@{parse\_func}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{parse\_func()}{parse\_func()}}
+{\footnotesize\ttfamily int parse\+\_\+func (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{char}]{next\+\_\+c,  }\item[{int \texorpdfstring{$\ast$}{*}}]{i }\end{DoxyParamCaption})}
+
+Находит в выражении названия функций и записывает в стек соответствующий ей символ.
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em c} & первый символ названия ф-\/ции\\
+\hline
+\mbox{\texttt{ in}}  & {\em next\+\_\+c} & второй символ названия ф-\/ции\\
+\hline
+\mbox{\texttt{ in}}  & {\em i} & длинна названия ф-\/ции \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код саписываемого в стек символа 
+\end{DoxyReturn}
+\Hypertarget{calc__lib_8h_a24cababe7e1bd863f0debe6e33d939a7}\label{calc__lib_8h_a24cababe7e1bd863f0debe6e33d939a7} 
+\index{calc\_lib.h@{calc\_lib.h}!parse\_number@{parse\_number}}
+\index{parse\_number@{parse\_number}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{parse\_number()}{parse\_number()}}
+{\footnotesize\ttfamily double parse\+\_\+number (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string,  }\item[{int \texorpdfstring{$\ast$}{*}}]{i }\end{DoxyParamCaption})}
+
+Находит число в строке. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em string} & строка в которой ищется число \\
+\hline
+\mbox{\texttt{ out}}  & {\em i} & кол-\/во цифр в найденном числе \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Число в формате double 
+\end{DoxyReturn}
+\Hypertarget{calc__lib_8h_a2024d6606c5b0a6b9e488da6172ab605}\label{calc__lib_8h_a2024d6606c5b0a6b9e488da6172ab605} 
+\index{calc\_lib.h@{calc\_lib.h}!pop\_stack\_char@{pop\_stack\_char}}
+\index{pop\_stack\_char@{pop\_stack\_char}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{pop\_stack\_char()}{pop\_stack\_char()}}
+{\footnotesize\ttfamily char pop\+\_\+stack\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Считывает символ из стэка \Hypertarget{calc__lib_8h_aeb9d0f583b913f5a225bc6dbdd36824f}\label{calc__lib_8h_aeb9d0f583b913f5a225bc6dbdd36824f} 
+\index{calc\_lib.h@{calc\_lib.h}!pop\_stack\_dbl@{pop\_stack\_dbl}}
+\index{pop\_stack\_dbl@{pop\_stack\_dbl}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{pop\_stack\_dbl()}{pop\_stack\_dbl()}}
+{\footnotesize\ttfamily double pop\+\_\+stack\+\_\+dbl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Считывает число из стэка \Hypertarget{calc__lib_8h_ab0aefd7b145a2524c53dc49ed7beb579}\label{calc__lib_8h_ab0aefd7b145a2524c53dc49ed7beb579} 
+\index{calc\_lib.h@{calc\_lib.h}!print\_stack\_char@{print\_stack\_char}}
+\index{print\_stack\_char@{print\_stack\_char}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{print\_stack\_char()}{print\_stack\_char()}}
+{\footnotesize\ttfamily void print\+\_\+stack\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Ф-\/ция печатает стек с операторами. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \doxylink{structstack__char}{stack\+\_\+char}} & указатель на стек с операторами \\
+\hline
+\end{DoxyParams}
+\Hypertarget{calc__lib_8h_a136bce76229ccd9c1c88613d2f7109d5}\label{calc__lib_8h_a136bce76229ccd9c1c88613d2f7109d5} 
+\index{calc\_lib.h@{calc\_lib.h}!print\_stack\_dbl@{print\_stack\_dbl}}
+\index{print\_stack\_dbl@{print\_stack\_dbl}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{print\_stack\_dbl()}{print\_stack\_dbl()}}
+{\footnotesize\ttfamily void print\+\_\+stack\+\_\+dbl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Ф-\/ция печатает стек с операндами. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \doxylink{structstack__dbl}{stack\+\_\+dbl}} & указатель на стек с операндами \\
+\hline
+\end{DoxyParams}
+\Hypertarget{calc__lib_8h_a25850bf30e298dd920fda5674a2e0f45}\label{calc__lib_8h_a25850bf30e298dd920fda5674a2e0f45} 
+\index{calc\_lib.h@{calc\_lib.h}!push\_stack\_char@{push\_stack\_char}}
+\index{push\_stack\_char@{push\_stack\_char}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{push\_stack\_char()}{push\_stack\_char()}}
+{\footnotesize\ttfamily void push\+\_\+stack\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+Записывает символ в стэк символов \Hypertarget{calc__lib_8h_a86b4de680625a7234994cbcccc3ffa75}\label{calc__lib_8h_a86b4de680625a7234994cbcccc3ffa75} 
+\index{calc\_lib.h@{calc\_lib.h}!push\_stack\_dbl@{push\_stack\_dbl}}
+\index{push\_stack\_dbl@{push\_stack\_dbl}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{push\_stack\_dbl()}{push\_stack\_dbl()}}
+{\footnotesize\ttfamily void push\+\_\+stack\+\_\+dbl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+Записывает число в стэк чисел \Hypertarget{calc__lib_8h_a5742b49627f50ec48a7e5272ed87b8bd}\label{calc__lib_8h_a5742b49627f50ec48a7e5272ed87b8bd} 
+\index{calc\_lib.h@{calc\_lib.h}!rad\_to\_grad@{rad\_to\_grad}}
+\index{rad\_to\_grad@{rad\_to\_grad}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{rad\_to\_grad()}{rad\_to\_grad()}}
+{\footnotesize\ttfamily double rad\+\_\+to\+\_\+grad (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+Переводит число из радиан в градусы. \Hypertarget{calc__lib_8h_a047174e5e79ac079e447be1065efce17}\label{calc__lib_8h_a047174e5e79ac079e447be1065efce17} 
+\index{calc\_lib.h@{calc\_lib.h}!take\_priority@{take\_priority}}
+\index{take\_priority@{take\_priority}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{take\_priority()}{take\_priority()}}
+{\footnotesize\ttfamily int take\+\_\+priority (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Проверяет приоритет операций 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em c} & Символ оператора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int с приоритетом операции 
+\end{DoxyReturn}
+\Hypertarget{calc__lib_8h_a0f08185f074d84eec9b1dacea53bc098}\label{calc__lib_8h_a0f08185f074d84eec9b1dacea53bc098} 
+\index{calc\_lib.h@{calc\_lib.h}!top\_stack\_char@{top\_stack\_char}}
+\index{top\_stack\_char@{top\_stack\_char}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{top\_stack\_char()}{top\_stack\_char()}}
+{\footnotesize\ttfamily char top\+\_\+stack\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__char}{stack\+\_\+char}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Читает верхнее значение из стэк с символами \Hypertarget{calc__lib_8h_a88bfcaffd7738d62a11df634eaa99383}\label{calc__lib_8h_a88bfcaffd7738d62a11df634eaa99383} 
+\index{calc\_lib.h@{calc\_lib.h}!top\_stack\_dbl@{top\_stack\_dbl}}
+\index{top\_stack\_dbl@{top\_stack\_dbl}!calc\_lib.h@{calc\_lib.h}}
+\doxysubsubsection{\texorpdfstring{top\_stack\_dbl()}{top\_stack\_dbl()}}
+{\footnotesize\ttfamily double top\+\_\+stack\+\_\+dbl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__dbl}{stack\+\_\+dbl}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+Читает верхнее значение из стэк с числами 

@@ -1,0 +1,70 @@
+\doxysection{/\+Users/bankblac/\+C7\+\_\+\+Smart\+Calc\+\_\+v1.0-\/1/src/calc\+\_\+lib.h}
+\hypertarget{calc__lib_8h_source}{}\label{calc__lib_8h_source}\mbox{\hyperlink{calc__lib_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SRC\_CALC\_LIB\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SRC\_CALC\_LIB\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PI\ 3.141592653589793}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00015\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structstack__dbl}{stack\_dbl}}[256];}
+\DoxyCodeLine{00016\ \ \ \textcolor{keywordtype}{int}\ stack\_dbl\_count;}
+\DoxyCodeLine{00017\ \}\ \mbox{\hyperlink{structstack__dbl}{stack\_dbl}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structstack__char}{stack\_char}}[256];}
+\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{int}\ stack\_char\_count;}
+\DoxyCodeLine{00025\ \}\ \mbox{\hyperlink{structstack__char}{stack\_char}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_ab4f1f58714c84c8da73022caa25c791a}{calc\_input\_string}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string},\ \textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_a24cababe7e1bd863f0debe6e33d939a7}{parse\_number}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string},\ \textcolor{keywordtype}{int}\ *i);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{calc__lib_8h_a86b4de680625a7234994cbcccc3ffa75}{push\_stack\_dbl}}(\mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *stack,\ \textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{calc__lib_8h_a25850bf30e298dd920fda5674a2e0f45}{push\_stack\_char}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *stack,\ \textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_aeb9d0f583b913f5a225bc6dbdd36824f}{pop\_stack\_dbl}}(\mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *stack);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{calc__lib_8h_a2024d6606c5b0a6b9e488da6172ab605}{pop\_stack\_char}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *stack);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_a361e2e7a270ca034ef7ec07cf6654793}{is\_empty\_stack\_dbl}}(\mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *stack);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_aab2d0d21b12c87233058abe29d87a609}{is\_empty\_stack\_char}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *stack);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_af6169811d8f3bc5da35c8fc4a9c9ffbf}{isNumber}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_a88bfcaffd7738d62a11df634eaa99383}{top\_stack\_dbl}}(\mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *stack);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{calc__lib_8h_a0f08185f074d84eec9b1dacea53bc098}{top\_stack\_char}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *stack);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_a047174e5e79ac079e447be1065efce17}{take\_priority}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_ae4af0aa749c57c829eb7bd6302b0c54c}{calc\_top\_stack\_binary}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *\mbox{\hyperlink{structstack__char}{stack\_char}},\ \mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *\mbox{\hyperlink{structstack__dbl}{stack\_dbl}});}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_a7c8e26dfde73023fc34305f647bf2dd1}{calc\_top\_stack\_unaru}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *\mbox{\hyperlink{structstack__char}{stack\_char}},\ \mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *\mbox{\hyperlink{structstack__dbl}{stack\_dbl}});}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_ae82e14262940f37f0fe58c9d7ee11261}{parse\_func}}(\textcolor{keywordtype}{char}\ c,\ \textcolor{keywordtype}{char}\ next\_c,\ \textcolor{keywordtype}{int}\ *i);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00122\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_a5076fae0b75c8519dfe3edddb26d4a91}{grad\_to\_rad}}(\textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{calc__lib_8h_a5742b49627f50ec48a7e5272ed87b8bd}{rad\_to\_grad}}(\textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_a4aad4d4c62245cddf950defbcc228fbc}{is\_brackets\_correct}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *str);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_ad4daa4a1e2bc55b3cc4665cde905ca98}{check\_errors\_in\_sterng}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00144\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{calc__lib_8h_a0bf516732200bc5c395fbf95a8bd07a9}{is\_dot}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{calc__lib_8h_a136bce76229ccd9c1c88613d2f7109d5}{print\_stack\_dbl}}(\mbox{\hyperlink{structstack__dbl}{stack\_dbl}}\ *stack);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00156\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{calc__lib_8h_ab0aefd7b145a2524c53dc49ed7beb579}{print\_stack\_char}}(\mbox{\hyperlink{structstack__char}{stack\_char}}\ *stack);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ SRC\_CALC\_LIB\_H\_}}
+
+\end{DoxyCode}
